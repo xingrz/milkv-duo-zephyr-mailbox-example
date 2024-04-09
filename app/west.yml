@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: WTFPL
+
+manifest:
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr.git
+      revision: pull/69594/head
+      clone-depth: 1
+      import:
+        name-allowlist:
+          - picolibc
