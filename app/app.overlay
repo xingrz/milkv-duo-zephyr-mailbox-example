@@ -1,0 +1,15 @@
+/*
+ * SPDX-License-Identifier: WTFPL
+ */
+
+/ {
+	mbox-consumer {
+		compatible = "vnd,mbox-consumer";
+		mboxes = <&mbox 0>, <&mbox 1>;
+		mbox-names = "rx", "tx";
+	};
+};
+
+&mbox {
+	status = "okay";
+};
